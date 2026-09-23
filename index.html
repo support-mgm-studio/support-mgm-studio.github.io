@@ -1,1 +1,320 @@
-Under development
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Trang tổng hợp chính sách quyền riêng tư của các ứng dụng thuộc MGM Studio."
+    />
+    <meta name="color-scheme" content="light" />
+    <meta name="theme-color" content="#fff8e8" />
+    <title>MGM Studio | Chính sách quyền riêng tư · Privacy Policies</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --background: #fff8e8;
+        --surface: rgba(255, 252, 247, 0.97);
+        --surface-soft: #fff0cf;
+        --accent: #e34c2d;
+        --accent-soft: #ff806b;
+        --text: #3a2418;
+        --muted: #7b6658;
+        --border: #f1d6aa;
+        --shadow: rgba(88, 53, 30, 0.1);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        background:
+          radial-gradient(circle at 12% 0%, rgba(255, 255, 255, 0.92), transparent 32rem),
+          radial-gradient(circle at 88% 8%, rgba(255, 128, 107, 0.16), transparent 30rem),
+          linear-gradient(180deg, #fffdf7 0%, var(--background) 58%, #ffedc8 100%);
+        color: var(--text);
+        font-family: "Segoe UI", "Noto Sans", "DejaVu Sans", Arial, sans-serif;
+        line-height: 1.65;
+      }
+
+      a {
+        color: inherit;
+      }
+
+      a:focus-visible {
+        outline: 3px solid var(--accent);
+        outline-offset: 4px;
+      }
+
+      .page-shell {
+        width: min(960px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 28px 0 64px;
+      }
+
+      .hero,
+      .app-card {
+        overflow: hidden;
+        border: 1px solid var(--border);
+        background: var(--surface);
+        box-shadow: 0 18px 44px var(--shadow);
+      }
+
+      .hero {
+        margin-bottom: 30px;
+        border-radius: 24px;
+        text-align: center;
+      }
+
+      .cover {
+        overflow: hidden;
+        margin: 0;
+        border-bottom: 1px solid var(--border);
+        background: var(--surface-soft);
+      }
+
+      .cover img {
+        display: block;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+      }
+
+      .hero-content {
+        padding: 30px 24px 32px;
+      }
+
+      .eyebrow {
+        margin: 0 0 8px;
+        color: var(--accent);
+        font-size: 0.78rem;
+        font-weight: 800;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+      }
+
+      h1,
+      h2 {
+        margin: 0;
+        color: var(--text);
+        font-family: "Noto Serif", "DejaVu Serif", "Times New Roman", serif;
+      }
+
+      h1 {
+        font-size: clamp(2rem, 5vw, 3.4rem);
+        line-height: 1.18;
+      }
+
+      .subtitle {
+        max-width: 680px;
+        margin: 14px auto 0;
+        color: var(--muted);
+        font-size: 0.98rem;
+      }
+
+      .section-heading {
+        margin: 0 0 16px;
+      }
+
+      .section-heading h2 {
+        font-size: clamp(1.45rem, 3vw, 1.9rem);
+      }
+
+      .section-heading p {
+        margin: 5px 0 0;
+        color: var(--muted);
+      }
+
+      .app-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+      }
+
+      .app-card {
+        display: flex;
+        min-height: 250px;
+        flex-direction: column;
+        border-radius: 22px;
+        text-decoration: none;
+        transition:
+          transform 160ms ease,
+          border-color 160ms ease,
+          box-shadow 160ms ease;
+      }
+
+      .app-card:hover {
+        transform: translateY(-3px);
+        border-color: var(--accent-soft);
+        box-shadow: 0 22px 52px rgba(88, 53, 30, 0.14);
+      }
+
+      .app-card__top {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        padding: 22px 22px 18px;
+        border-bottom: 1px solid var(--border);
+        background: linear-gradient(135deg, var(--surface-soft), rgba(255, 252, 247, 0.72));
+      }
+
+      .app-mark {
+        display: inline-flex;
+        width: 54px;
+        height: 54px;
+        flex: 0 0 auto;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid var(--border);
+        border-radius: 17px;
+        background: #fffdf8;
+        font-size: 1.7rem;
+      }
+
+      .app-name {
+        margin: 0;
+        font-size: 1.25rem;
+        font-weight: 850;
+        line-height: 1.25;
+      }
+
+      .app-name-en {
+        margin: 3px 0 0;
+        color: var(--muted);
+        font-size: 0.83rem;
+        font-weight: 650;
+      }
+
+      .app-card__body {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        padding: 20px 22px 22px;
+      }
+
+      .app-description {
+        margin: 0;
+        color: var(--muted);
+        font-size: 0.93rem;
+      }
+
+      .open-label {
+        display: inline-flex;
+        align-items: center;
+        gap: 7px;
+        margin-top: auto;
+        padding-top: 24px;
+        color: var(--accent);
+        font-size: 0.88rem;
+        font-weight: 850;
+      }
+
+      footer {
+        margin-top: 30px;
+        color: var(--muted);
+        font-size: 0.82rem;
+        text-align: center;
+      }
+
+      @media (max-width: 680px) {
+        .app-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 520px) {
+        .page-shell {
+          width: min(100% - 20px, 960px);
+          padding-top: 12px;
+        }
+
+        .hero,
+        .app-card {
+          border-radius: 18px;
+        }
+
+        .hero-content {
+          padding-right: 18px;
+          padding-left: 18px;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .app-card {
+          transition: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page-shell">
+      <header class="hero">
+        <figure class="cover">
+          <img
+            src="https://support-mgm-studio.github.io/policies/assets/policy-cover.jpg"
+            alt="MGM Studio — Ideas, Code, Play"
+            width="2048"
+            height="1152"
+            fetchpriority="high"
+            decoding="async"
+          />
+        </figure>
+        <div class="hero-content">
+          <p class="eyebrow">MGM Studio</p>
+          <h1>Chính sách quyền riêng tư<br />Privacy Policies</h1>
+          <p class="subtitle">
+            Chọn ứng dụng để xem chính sách quyền riêng tư tương ứng.<br />
+            Choose an app to view its privacy policy.
+          </p>
+        </div>
+      </header>
+
+      <section aria-labelledby="policy-list-title">
+        <div class="section-heading">
+          <h2 id="policy-list-title">Ứng dụng · Apps</h2>
+          <p>Mỗi ứng dụng có một chính sách riêng, phù hợp với dữ liệu và tính năng của ứng dụng đó.</p>
+        </div>
+
+        <div class="app-grid">
+          <a class="app-card" href="./chanting-counter/" aria-label="Xem chính sách Sổ Niệm Phật">
+            <div class="app-card__top">
+              <span class="app-mark" aria-hidden="true">🙏</span>
+              <div>
+                <p class="app-name">Sổ Niệm Phật</p>
+                <p class="app-name-en">Chanting Counter</p>
+              </div>
+            </div>
+            <div class="app-card__body">
+              <p class="app-description">
+                Chính sách dành cho dữ liệu đếm, lịch sử thực hành, cài đặt và hình nền được lưu trên thiết bị.
+              </p>
+              <span class="open-label">Xem chính sách · View policy →</span>
+            </div>
+          </a>
+
+          <a class="app-card" href="./cookfit/" aria-label="Xem chính sách CookFit">
+            <div class="app-card__top">
+              <span class="app-mark" aria-hidden="true">👨‍🍳</span>
+              <div>
+                <p class="app-name">CookFit</p>
+                <p class="app-name-en">From your fridge to a delicious meal</p>
+              </div>
+            </div>
+            <div class="app-card__body">
+              <p class="app-description">
+                Chính sách dành cho dữ liệu tìm món, ảnh tủ lạnh, AI, quảng cáo, báo cáo nội dung và Premium.
+              </p>
+              <span class="open-label">Xem chính sách · View policy →</span>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <footer>© 2026 MGM Studio</footer>
+    </main>
+  </body>
+</html>
