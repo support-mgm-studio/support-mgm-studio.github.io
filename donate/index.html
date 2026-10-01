@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Ủng hộ MGM Studio duy trì và tiếp tục phát triển các ứng dụng." />
+    <meta name="color-scheme" content="light" />
+    <meta name="theme-color" content="#fff8e8" />
+    <title>MGM Studio | Hỗ trợ phát triển</title>
+    <link rel="stylesheet" href="../assets/site.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <header class="hero">
+        <figure class="cover">
+          <img src="../assets/policy-cover.jpg" alt="MGM Studio — Ideas, Code, Play" width="2048" height="1152" fetchpriority="high" decoding="async" />
+        </figure>
+        <div class="hero-content">
+          <p class="eyebrow">MGM Studio</p>
+          <h1>Hỗ trợ phát triển</h1>
+          <p class="subtitle">Sự đồng hành của bạn giúp chúng tôi duy trì và tiếp tục phát triển các ứng dụng.</p>
+        </div>
+      </header>
+
+      <nav class="site-nav" aria-label="Điều hướng chính">
+        <ul class="nav-list">
+          <li><a href="../">Trang chủ</a></li>
+          <li><a href="../#applications">Ứng dụng</a></li>
+          <li><a href="mailto:support.mgm.studio@gmail.com">Liên hệ</a></li>
+        </ul>
+      </nav>
+
+      <div class="donation-grid">
+        <section class="donation-card" aria-labelledby="vietnam-title">
+          <div class="card-heading"><h2 id="vietnam-title">🇻🇳 Việt Nam</h2></div>
+          <div class="card-body">
+            <img class="qr" src="../assets/donation_qr.webp" alt="Mã VietQR chuyển khoản MB Bank" width="512" height="512" />
+            <dl class="bank-details">
+              <div><dt>Ngân hàng</dt><dd>MB Bank</dd></div>
+              <div>
+                <dt>Số tài khoản</dt>
+                <dd class="account-row">
+                  <span id="account-number">9682557751980</span>
+                  <button class="copy-button" id="copy-account" type="button">Sao chép</button>
+                </dd>
+              </div>
+              <div><dt>Chủ tài khoản</dt><dd>DINH XUAN QUANG</dd></div>
+            </dl>
+          </div>
+        </section>
+
+        <section class="donation-card" aria-labelledby="international-title">
+          <div class="card-heading"><h2 id="international-title">🌍 Quốc tế</h2></div>
+          <div class="card-body">
+            <div class="donation-options">
+              <a class="donation-option" href="https://ko-fi.com/mgm_studio" target="_blank" rel="noopener noreferrer"><span>☕ Ko-fi</span></a>
+              <a class="donation-option" href="https://paypal.me/MGMStudio217" target="_blank" rel="noopener noreferrer"><span>💙 PayPal</span></a>
+            </div>
+            <p class="international-note">Các liên kết sẽ mở trang thanh toán của nhà cung cấp tương ứng trong cửa sổ mới.</p>
+          </div>
+        </section>
+      </div>
+
+      <section class="thank-you" aria-label="Lời cảm ơn">
+        <p><strong>Cảm ơn bạn đã đồng hành cùng MGM Studio. 💛</strong></p>
+        <p class="disclaimer">Việc ủng hộ hoàn toàn tự nguyện, không phải là giao dịch mua tính năng và không tạo quyền lợi đặc biệt trong ứng dụng.</p>
+      </section>
+
+      <footer>
+        <nav class="footer-links" aria-label="Liên kết hỗ trợ">
+          <a href="mailto:support.mgm.studio@gmail.com">Liên hệ</a><span aria-hidden="true">·</span>
+          <a href="../privacy/">Chính sách quyền riêng tư</a><span aria-hidden="true">·</span>
+          <a href="./">Hỗ trợ phát triển</a>
+        </nav>
+        <p class="copyright">© 2026 MGM Studio</p>
+      </footer>
+    </main>
+
+    <script>
+      const copyButton = document.querySelector("#copy-account");
+      const accountNumber = document.querySelector("#account-number").textContent;
+      copyButton.addEventListener("click", async () => {
+        try {
+          await navigator.clipboard.writeText(accountNumber);
+          copyButton.textContent = "Đã sao chép";
+        } catch {
+          window.prompt("Sao chép số tài khoản:", accountNumber);
+        }
+      });
+    </script>
+  </body>
+</html>
