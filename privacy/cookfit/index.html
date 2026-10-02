@@ -5,261 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Chính sách quyền riêng tư song ngữ của ứng dụng VoiceDo."
+      content="Chính sách quyền riêng tư song ngữ của ứng dụng CookFit."
     />
     <meta name="color-scheme" content="light" />
     <meta name="theme-color" content="#fff8e8" />
-    <title>VoiceDo | Chính sách quyền riêng tư · Privacy Policy</title>
-    <style>
-      :root {
-        color-scheme: light;
-        --background: #fff8e8;
-        --surface: rgba(255, 252, 247, 0.97);
-        --surface-soft: #fff0cf;
-        --accent: #e34c2d;
-        --accent-soft: #ff806b;
-        --text: #3a2418;
-        --muted: #7b6658;
-        --border: #f1d6aa;
-        --shadow: rgba(88, 53, 30, 0.1);
-      }
-
-      * {
-        box-sizing: border-box;
-      }
-
-      html {
-        scroll-behavior: smooth;
-      }
-
-      body {
-        margin: 0;
-        min-height: 100vh;
-        background:
-          radial-gradient(circle at 12% 0%, rgba(255, 255, 255, 0.92), transparent 32rem),
-          radial-gradient(circle at 88% 8%, rgba(255, 128, 107, 0.16), transparent 30rem),
-          linear-gradient(180deg, #fffdf7 0%, var(--background) 58%, #ffedc8 100%);
-        color: var(--text);
-        font-family: "Segoe UI", "Noto Sans", "DejaVu Sans", Arial, sans-serif;
-        line-height: 1.68;
-      }
-
-      a {
-        color: #b83b23;
-        overflow-wrap: anywhere;
-      }
-
-      a:focus-visible {
-        outline: 2px solid var(--accent);
-        outline-offset: 4px;
-      }
-
-      .page-shell {
-        width: min(960px, calc(100% - 32px));
-        margin: 0 auto;
-        padding: 28px 0 64px;
-      }
-
-      .hero,
-      .policy {
-        overflow: hidden;
-        border: 1px solid var(--border);
-        border-radius: 24px;
-        background: var(--surface);
-        box-shadow: 0 18px 44px var(--shadow);
-      }
-
-      .hero {
-        margin-bottom: 30px;
-        padding: 34px 24px 30px;
-        text-align: center;
-      }
-
-      .brand-mark {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        min-width: 156px;
-        min-height: 56px;
-        margin-bottom: 12px;
-        border: 1px solid var(--border);
-        border-radius: 999px;
-        background: var(--surface-soft);
-        color: var(--text);
-        font-size: 1.35rem;
-        font-weight: 800;
-      }
-
-      .eyebrow {
-        margin: 0 0 8px;
-        color: var(--accent);
-        font-size: 0.78rem;
-        font-weight: 800;
-        letter-spacing: 0.16em;
-        text-transform: uppercase;
-      }
-
-      img {
-          max-width: 100%;
-          height: auto;
-          display: block;
-      }
-
-      h1 {
-        margin: 0;
-        color: var(--text);
-        font-family: "Noto Serif", "DejaVu Serif", "Times New Roman", serif;
-        font-size: clamp(2rem, 5vw, 3.4rem);
-        line-height: 1.18;
-      }
-
-      .subtitle {
-        max-width: 700px;
-        margin: 14px auto 0;
-        color: var(--muted);
-        font-size: 0.98rem;
-      }
-
-      .language-nav {
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-        margin-top: 24px;
-      }
-
-      .language-nav a {
-        min-width: 120px;
-        padding: 9px 16px;
-        border: 1px solid var(--border);
-        border-radius: 999px;
-        background: var(--surface-soft);
-        color: var(--text);
-        font-size: 0.88rem;
-        font-weight: 800;
-        text-decoration: none;
-      }
-
-      .language-nav a:hover {
-        border-color: var(--accent-soft);
-        background: #ffe4bd;
-      }
-
-      .policies {
-        display: grid;
-        gap: 24px;
-      }
-
-      .policy-header {
-        padding: 26px 28px 22px;
-        border-bottom: 1px solid var(--border);
-        background: linear-gradient(135deg, #fff0cf, rgba(255, 252, 247, 0.72));
-      }
-
-      .language-label {
-        display: inline-block;
-        margin-bottom: 8px;
-        color: var(--accent);
-        font-size: 0.75rem;
-        font-weight: 800;
-        letter-spacing: 0.14em;
-        text-transform: uppercase;
-      }
-
-      h2 {
-        margin: 0;
-        color: var(--text);
-        font-family: "Noto Serif", "DejaVu Serif", "Times New Roman", serif;
-        font-size: clamp(1.55rem, 3vw, 2rem);
-        line-height: 1.25;
-      }
-
-      .updated {
-        margin: 9px 0 0;
-        color: var(--muted);
-        font-size: 0.84rem;
-      }
-
-      .policy-body {
-        padding: 8px 28px 28px;
-      }
-
-      .intro {
-        margin: 18px 0 22px;
-        font-size: 1.02rem;
-      }
-
-      .policy section {
-        padding: 18px 0;
-        border-top: 1px solid rgba(227, 76, 45, 0.18);
-      }
-
-      h3 {
-        margin: 0 0 8px;
-        color: var(--text);
-        font-family: "Noto Serif", "DejaVu Serif", "Times New Roman", serif;
-        font-size: 1.1rem;
-      }
-
-      p {
-        margin: 0;
-      }
-
-      ul {
-        margin: 10px 0 0;
-        padding-left: 22px;
-      }
-
-      li + li {
-        margin-top: 9px;
-      }
-
-      footer {
-        margin-top: 30px;
-        color: var(--muted);
-        font-size: 0.82rem;
-        text-align: center;
-      }
-
-      @media (max-width: 520px) {
-        .page-shell {
-          width: min(100% - 20px, 960px);
-          padding-top: 12px;
-        }
-
-        .hero,
-        .policy {
-          border-radius: 18px;
-        }
-
-        .hero {
-          padding-right: 18px;
-          padding-left: 18px;
-        }
-
-        .language-nav {
-          flex-direction: column;
-        }
-
-        .policy-header,
-        .policy-body {
-          padding-right: 20px;
-          padding-left: 20px;
-        }
-      }
-
-      @media (prefers-reduced-motion: reduce) {
-        html {
-          scroll-behavior: auto;
-        }
-      }
-    </style>
-  </head>
+    <title>CookFit | Chính sách quyền riêng tư · Privacy Policy</title>
+    <link rel="stylesheet" href="../../assets/site.css" />
+    </head>
   <body>
     <main class="page-shell">
       <header class="hero">
       <figure class="cover">
           <img
-            src="../assets/policy-cover.jpg"
+            src="../../assets/policy-cover.jpg"
             alt="MGM Studio — Ideas, Code, Play"
             width="2048"
             height="1152"
@@ -267,11 +25,18 @@
             decoding="async"
           />
         </figure>
-        <p class="eyebrow">VoiceDo · MGM Studio</p>
+        <p class="eyebrow">CookFit · MGM Studio</p>
         <h1>Chính sách quyền riêng tư<br />Privacy Policy</h1>
         <p class="subtitle">
-          Chính sách riêng cho ứng dụng VoiceDo, trình bày bằng tiếng Việt và tiếng Anh.
+          Chính sách riêng cho ứng dụng CookFit, trình bày bằng tiếng Việt và tiếng Anh.
         </p>
+             <nav class="site-nav" aria-label="Điều hướng chính">
+        <ul class="nav-list">
+          <li><a href="./" aria-current="page">Trang chủ</a></li>
+          <li><a href="#applications">Ứng dụng</a></li>
+          <li><a href="mailto:support.mgm.studio@gmail.com">Liên hệ</a></li>
+        </ul>
+      </nav>
         <nav class="language-nav" aria-label="Chọn ngôn ngữ · Choose a language">
           <a href="#tieng-viet">Tiếng Việt</a>
           <a href="#english">English</a>
@@ -282,18 +47,18 @@
         <article class="policy" id="tieng-viet" lang="vi">
           <header class="policy-header">
             <span class="language-label">Tiếng Việt</span>
-            <h2>Chính sách quyền riêng tư VoiceDo</h2>
+            <h2>Chính sách quyền riêng tư CookFit</h2>
             <p class="updated">Ngày hiệu lực và cập nhật gần nhất: 23/07/2026</p>
           </header>
           <div class="policy-body">
             <p class="intro">
               Chính sách này giải thích cách MGM Studio (“chúng tôi”) xử lý dữ liệu khi
-              bạn dùng VoiceDo. VoiceDo không yêu cầu tạo tài khoản. Ứng dụng dành cho
+              bạn dùng CookFit. CookFit không yêu cầu tạo tài khoản. Ứng dụng dành cho
               người từ 18 tuổi trở lên.
             </p>
 
             <section>
-              <h3>Dữ liệu VoiceDo xử lý</h3>
+              <h3>Dữ liệu CookFit xử lý</h3>
               <ul>
                 <li>
                   <strong>Nội dung tìm món và dữ liệu AI:</strong> nguyên liệu bạn nhập,
@@ -307,14 +72,14 @@
                   <strong>Dữ liệu lưu cục bộ:</strong> món đã lưu, lựa chọn dị ứng,
                   nguyên liệu cơ bản, phản hồi thích/không thích, tín hiệu khẩu vị và
                   trạng thái Premium được lưu trong vùng riêng của ứng dụng trên thiết
-                  bị. VoiceDo không yêu cầu tên, email hoặc tài khoản người dùng.
+                  bị. CookFit không yêu cầu tên, email hoặc tài khoản người dùng.
                 </li>
                 <li>
                   <strong>Báo cáo nội dung:</strong> nếu bạn báo cáo một công thức,
-                  VoiceDo gửi mã và tên công thức, bản chụp nội dung công thức, lý do
+                  CookFit gửi mã và tên công thức, bản chụp nội dung công thức, lý do
                   báo cáo, ngôn ngữ, nguồn công thức, phiên bản ứng dụng và thời điểm
                   báo cáo đến Firebase Firestore để kiểm duyệt. Báo cáo không kèm mã
-                  tài khoản VoiceDo.
+                  tài khoản CookFit.
                 </li>
                 <li>
                   <strong>Quảng cáo:</strong> đối với người dùng bản miễn phí, Google
@@ -325,7 +90,7 @@
                 </li>
                 <li>
                   <strong>Giao dịch Premium:</strong> Google Play xử lý thanh toán.
-                  VoiceDo nhận thông tin sản phẩm, trạng thái mua và mã giao dịch cần
+                  CookFit nhận thông tin sản phẩm, trạng thái mua và mã giao dịch cần
                   thiết để xác nhận/mở khóa Premium; ứng dụng chỉ lưu cục bộ trạng thái
                   Premium.
                 </li>
@@ -341,10 +106,10 @@
             <section>
               <h3>Camera và ảnh</h3>
               <p>
-                VoiceDo chỉ yêu cầu quyền camera khi bạn chọn tính năng chụp tủ lạnh.
+                CookFit chỉ yêu cầu quyền camera khi bạn chọn tính năng chụp tủ lạnh.
                 Bạn có thể từ chối và nhập nguyên liệu bằng tay. Ảnh chụp được giữ tạm
                 trong bộ nhớ đệm riêng của ứng dụng và gửi đến dịch vụ AI để nhận diện
-                nguyên liệu; ảnh không được tự động thêm vào thư viện ảnh. VoiceDo cố
+                nguyên liệu; ảnh không được tự động thêm vào thư viện ảnh. CookFit cố
                 gắng xóa tệp tạm khi không còn cần thiết, và Android cũng có thể xóa bộ
                 nhớ đệm. Không chụp người, giấy tờ hoặc thông tin bí mật.
               </p>
@@ -357,7 +122,7 @@
                 áp dụng lựa chọn dị ứng và khẩu vị, lưu món, tải thư viện công thức công
                 khai, xử lý báo cáo an toàn, xác nhận Premium, hiển thị quảng cáo theo
                 lựa chọn quyền riêng tư, bảo vệ dịch vụ và cải thiện độ ổn định.
-                VoiceDo không bán dữ liệu cá nhân và không cung cấp nội dung tìm món
+                CookFit không bán dữ liệu cá nhân và không cung cấp nội dung tìm món
                 hoặc ảnh của bạn cho nhà quảng cáo.
               </p>
             </section>
@@ -406,12 +171,12 @@
               <ul>
                 <li>
                   Dữ liệu cục bộ được giữ đến khi bạn xóa dữ liệu ứng dụng hoặc gỡ
-                  VoiceDo. Tùy cài đặt Android, món đã lưu và tùy chọn có thể được đưa
+                  CookFit. Tùy cài đặt Android, món đã lưu và tùy chọn có thể được đưa
                   vào bản sao lưu hệ thống hoặc chuyển sang thiết bị mới; trạng thái
                   Premium bị loại khỏi bản sao lưu và được kiểm tra lại với Google Play.
                 </li>
                 <li>
-                  VoiceDo không giữ một bản sao máy chủ riêng của yêu cầu AI hoặc ảnh.
+                  CookFit không giữ một bản sao máy chủ riêng của yêu cầu AI hoặc ảnh.
                   Việc lưu giữ tại Google tuân theo dịch vụ và điều khoản Google đang áp
                   dụng như mô tả ở trên.
                 </li>
@@ -431,7 +196,7 @@
               <p>
                 Bạn có thể không cấp quyền camera, thay đổi lựa chọn quảng cáo trong
                 màn Cài đặt khi tùy chọn này được cung cấp, đặt lại/xóa mã quảng cáo
-                trong Android, xóa dữ liệu ứng dụng hoặc gỡ VoiceDo. Bạn có thể yêu cầu
+                trong Android, xóa dữ liệu ứng dụng hoặc gỡ CookFit. Bạn có thể yêu cầu
                 truy cập hoặc xóa báo cáo nội dung bằng email; hãy cung cấp tên công
                 thức, lý do và thời gian báo cáo gần đúng để chúng tôi tìm đúng bản ghi.
                 Tùy nơi cư trú, bạn có thể có thêm quyền đối với dữ liệu cá nhân.
@@ -441,7 +206,7 @@
             <section>
               <h3>Bảo mật</h3>
               <p>
-                VoiceDo dùng kết nối được mã hóa do Android/Google SDK cung cấp, Firebase
+                CookFit dùng kết nối được mã hóa do Android/Google SDK cung cấp, Firebase
                 Security Rules và App Check để hạn chế truy cập trái phép. Không hệ
                 thống truyền hoặc lưu trữ nào an toàn tuyệt đối.
               </p>
@@ -450,7 +215,7 @@
             <section>
               <h3>Người dùng dưới 18 tuổi</h3>
               <p>
-                VoiceDo không hướng tới người dưới 18 tuổi và không chủ ý thu thập dữ
+                CookFit không hướng tới người dưới 18 tuổi và không chủ ý thu thập dữ
                 liệu của họ. Nếu bạn tin rằng người dưới 18 tuổi đã cung cấp dữ liệu,
                 hãy liên hệ để chúng tôi xem xét yêu cầu phù hợp.
               </p>
@@ -479,18 +244,18 @@
         <article class="policy" id="english" lang="en">
           <header class="policy-header">
             <span class="language-label">English</span>
-            <h2>VoiceDo Privacy Policy</h2>
+            <h2>CookFit Privacy Policy</h2>
             <p class="updated">Effective and last updated: July 23, 2026</p>
           </header>
           <div class="policy-body">
             <p class="intro">
               This policy explains how MGM Studio (“we”) processes data when you use
-              VoiceDo. VoiceDo does not require an account. The app is intended for
+              CookFit. CookFit does not require an account. The app is intended for
               people aged 18 or older.
             </p>
 
             <section>
-              <h3>Data VoiceDo processes</h3>
+              <h3>Data CookFit processes</h3>
               <ul>
                 <li>
                   <strong>Recipe-search and AI data:</strong> ingredients you type,
@@ -503,15 +268,15 @@
                 <li>
                   <strong>Data stored locally:</strong> saved recipes, allergy choices,
                   pantry staples, like/dislike feedback, taste signals and Premium
-                  status are stored in the app's private area on your device. VoiceDo
+                  status are stored in the app's private area on your device. CookFit
                   does not ask for your name, email address or a user account.
                 </li>
                 <li>
-                  <strong>Content reports:</strong> if you report a recipe, VoiceDo
+                  <strong>Content reports:</strong> if you report a recipe, CookFit
                   sends the recipe identifier and name, a snapshot of the recipe,
                   selected reason, language, recipe source, app version and report time
                   to Firebase Firestore for moderation. Reports do not include a
-                  VoiceDo account identifier.
+                  CookFit account identifier.
                 </li>
                 <li>
                   <strong>Advertising:</strong> for free users, Google Mobile Ads may
@@ -522,7 +287,7 @@
                 </li>
                 <li>
                   <strong>Premium purchases:</strong> Google Play processes payments.
-                  VoiceDo receives the product, purchase status and transaction token
+                  CookFit receives the product, purchase status and transaction token
                   needed to verify/unlock Premium; the app stores only a local Premium
                   status.
                 </li>
@@ -539,11 +304,11 @@
             <section>
               <h3>Camera and photos</h3>
               <p>
-                VoiceDo requests camera access only when you choose to photograph your
+                CookFit requests camera access only when you choose to photograph your
                 fridge. You may deny access and type ingredients instead. The photo is
                 held temporarily in the app's private cache and sent to the AI service
                 for ingredient recognition; it is not automatically added to your
-                photo library. VoiceDo attempts to delete the temporary file when it is
+                photo library. CookFit attempts to delete the temporary file when it is
                 no longer needed, and Android may also clear the cache. Do not
                 photograph people, documents or confidential information.
               </p>
@@ -555,7 +320,7 @@
                 Data is used to identify ingredients, generate and display recipes,
                 apply allergy and taste choices, save recipes, load the public recipe
                 catalog, review safety reports, verify Premium, show ads according to
-                privacy choices, protect services and improve reliability. VoiceDo
+                privacy choices, protect services and improve reliability. CookFit
                 does not sell personal data and does not provide recipe-search content
                 or photos to advertisers.
               </p>
@@ -607,13 +372,13 @@
               <h3>Retention, backups and deletion</h3>
               <ul>
                 <li>
-                  Local data remains until you clear VoiceDo's app data or uninstall
+                  Local data remains until you clear CookFit's app data or uninstall
                   it. Depending on Android settings, saved recipes and preferences may
                   be included in a system backup or device transfer. Premium status is
                   excluded from backup and is checked again with Google Play.
                 </li>
                 <li>
-                  VoiceDo does not retain a separate server copy of AI requests or
+                  CookFit does not retain a separate server copy of AI requests or
                   photos. Retention by Google follows the applicable Google service and
                   terms described above.
                 </li>
@@ -633,7 +398,7 @@
               <p>
                 You may deny camera access, change ad privacy choices from Settings
                 when the option is available, reset/delete the advertising identifier
-                in Android, clear app data or uninstall VoiceDo. You may request access
+                in Android, clear app data or uninstall CookFit. You may request access
                 to or deletion of a content report by email; include the recipe name,
                 reason and approximate report time so we can identify the record.
                 Depending on where you live, you may have additional privacy rights.
@@ -643,7 +408,7 @@
             <section>
               <h3>Security</h3>
               <p>
-                VoiceDo uses encrypted connections provided by Android/Google SDKs,
+                CookFit uses encrypted connections provided by Android/Google SDKs,
                 Firebase Security Rules and App Check to limit unauthorized access. No
                 transmission or storage system is completely secure.
               </p>
@@ -652,7 +417,7 @@
             <section>
               <h3>Users under 18</h3>
               <p>
-                VoiceDo is not directed to people under 18 and we do not knowingly
+                CookFit is not directed to people under 18 and we do not knowingly
                 collect their data. If you believe a person under 18 has provided data,
                 contact us so we can review the appropriate request.
               </p>
@@ -679,7 +444,16 @@
         </article>
       </div>
 
-      <footer>© 2026 MGM Studio · VoiceDo</footer>
+       <footer>
+        <nav class="footer-links" aria-label="Liên kết hỗ trợ">
+          <a href="mailto:support.mgm.studio@gmail.com">Liên hệ</a>
+          <span aria-hidden="true">·</span>
+          <a href="../../privacy/">Chính sách quyền riêng tư</a>
+          <span aria-hidden="true">·</span>
+          <a href="../../donate/">Hỗ trợ phát triển</a>
+        </nav>
+        <p class="copyright">© 2026 MGM Studio</p>
+      </footer>
     </main>
   </body>
 </html>
